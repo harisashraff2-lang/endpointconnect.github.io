@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -80,7 +81,7 @@
 <body>
 
 <h1>Endpoint Connect Privacy Policy</h1>
-<p class="effective"><strong>Effective date:</strong> 19 September 2026</p>
+<p class="effective"><strong>Effective date:</strong> 14 November 2026</p>
 
 <h2>1. Scope and who we are</h2>
 
@@ -108,6 +109,7 @@ conversations, and attachments are not routed through an Endpoint Connect server
   <li>Provider credentials and App conversation data are stored on your device, subject to your device settings and backups.</li>
   <li>When you use an AI feature, the App sends the information needed for that request directly from your device to the provider or endpoint you selected.</li>
   <li>The provider or endpoint you select may process that information under its own terms, settings and privacy practices.</li>
+  <li>Optional on-device speech features can process supported text locally without sending that text to a hosted speech provider.</li>
 </ul>
 
 <h2>3. Information handled by the App</h2>
@@ -148,6 +150,52 @@ If you choose to attach a document, PDF, photo, camera capture, audio recording,
 item as necessary to perform the action you requested. The selected content may be processed locally and transmitted
 directly to your selected provider or endpoint when required for that feature. Camera, photo, file, and microphone
 access is user-initiated and subject to Android permissions. Endpoint Connect does not use these permissions for advertising.
+</p>
+
+<h3>3.3.1 Voice Chat, speech recognition, and text-to-speech</h3>
+
+<p>
+In supported App versions, Voice Chat is an optional session that you start and end. When microphone access is
+permitted, the App uses microphone input to recognize spoken turns. It may use an Android speech recognition
+service or a hosted speech-to-text provider you configure or select. Audio sent to a hosted service is processed
+under that service's terms and privacy practices. Depending on your Android speech recognition configuration,
+recognition may also involve processing by your device's speech service provider.
+</p>
+
+<p>
+Recognized speech may be submitted as text to your selected AI chat provider or endpoint. Assistant replies
+may be converted into spoken audio using Android's speech engine, a hosted text-to-speech service, or a
+compatible locally installed speech engine. Hosted text-to-speech sends the text to be spoken to the selected
+service. Voice conversations can appear in your existing locally stored chat history, including transcripts
+and assistant replies; such records remain subject to the local retention and deletion practices in Section 7.
+</p>
+
+<p>
+Voice Chat is initiated by the user and provides controls to mute, pause, or end the session. Microphone access
+is subject to Android permissions and device indicators. The availability of speech features and their processing
+location depends on the selected engines, settings, language, and App version. Endpoint Connect does not operate
+its own speech-processing server.
+</p>
+
+<h3>3.3.2 Image creation, editing, and video generation</h3>
+
+<p>
+If you choose image generation, photo editing, or video generation, the App may send your prompt, selected
+images or other supplied media, and necessary request information directly to the compatible AI service you
+choose. The service may return generated images, videos, or status information and may process or retain
+submitted material under its own terms and privacy practices. Any outputs you choose to keep may be stored
+locally in the App, including in chats or the Library.
+</p>
+
+<h3>3.3.3 Optional offline speech models and delivery</h3>
+
+<p>
+Supported versions may offer optional on-device speech synthesis, including Kyutai Pocket TTS. Once the
+required model components are installed, speech synthesis for this option runs on the device without sending
+the text being spoken to a hosted TTS service. The optional components may be delivered through Google Play;
+Google may process information needed to provide, secure, and manage app downloads under its own policies.
+Other App features, including hosted AI chat or hosted speech recognition, may still require network transfers
+as described in this Policy.
 </p>
 
 <h3>3.4 Optional device-local profile and settings</h3>
@@ -199,7 +247,7 @@ remove provider keys, passwords, private prompts and other secrets before contac
 <h3>3.8 Analytics and diagnostics</h3>
 
 <p>
-The current release does not include advertising SDKs or developer-operated behavioral analytics. Google Play and the
+Endpoint Connect does not include advertising SDKs or developer-operated behavioral analytics. Google Play and the
 Android operating system may independently process installation, purchase, security, crash, and device information in
 accordance with applicable Google policies and your device settings.
 </p>
@@ -211,7 +259,7 @@ accordance with applicable Google policies and your device settings.
 <ul>
   <li>connect to and authenticate with providers and endpoints you choose;</li>
   <li>send your requests and receive or stream responses;</li>
-  <li>support attachments, image generation, audio, tools, model discovery, and other capabilities you choose to use;</li>
+  <li>support attachments, image generation and editing, video generation, speech recognition, text-to-speech, Voice Chat, tools, model discovery, and other capabilities you choose to use;</li>
   <li>save and restore local conversations, drafts, settings, and connection state;</li>
   <li>protect credentials, diagnose failures, and maintain security and reliability;</li>
   <li>respond to support requests and comply with applicable law.</li>
@@ -232,7 +280,7 @@ over your device’s network connection.
   <li>commercial AI providers, account-login services, or routing platforms;</li>
   <li>self-hosted services such as Hermes, Open WebUI, Ollama, LM Studio, vLLM, llama.cpp, LocalAI, or other compatible software;</li>
   <li>custom OpenAI-compatible or other endpoints whose address you provide; and</li>
-  <li>web-search, retrieval, speech, image, or tool services that you configure or invoke.</li>
+  <li>web-search, retrieval, speech, image, video-generation, or tool services that you configure or invoke.</li>
 </ul>
 
 <h3>5.2 Third-party services</h3>
@@ -303,7 +351,7 @@ notifications required by law.
 <h2>7. Retention and deletion</h2>
 
 <p>
-Local conversations, drafts, settings, attachments, and connection information are stored on your device and may remain
+Local conversations, including Voice Chat transcripts and saved generated media, drafts, settings, attachments, and connection information are stored on your device and may remain
 there until you delete them in the App, clear the App’s storage, remove the relevant connection, or uninstall the App,
 subject to device backups and other device-level storage or recovery mechanisms. You can delete chats and remove saved
 connections through the App.
@@ -326,7 +374,7 @@ legal obligations.
 
 <p>
 You control which providers or endpoints to connect, which model to use, what content to send, and whether to grant
-optional Android permissions. You may revoke permissions in your Android device settings. A feature may not work
+optional Android permissions. You can stop a Voice Chat session using its in-app controls. You may revoke permissions in your Android device settings. A feature may not work
 without the permission or provider or endpoint capability it requires. You may use the App without creating an Endpoint
 Connect account.
 </p>
